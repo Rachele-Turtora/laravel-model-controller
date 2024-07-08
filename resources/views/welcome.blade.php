@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <h1>Template Laravel</h1>
+    <h1>Movies</h1>
 
-    <img src="{{ Vite::asset('resources/img/pikachu.png') }}" alt="">
+    <ul>
+        @foreach($movies as $movie)
+        <li>{{$movie['title']}}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
