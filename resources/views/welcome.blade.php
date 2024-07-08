@@ -11,9 +11,11 @@
 <body>
     <h1>Movies</h1>
 
-    <ul>
+    <ul class="d-flex flex-wrap">
         @foreach($movies as $movie)
-        <li>{{$movie['title']}}</li>
+        <li class="my-card col-20">
+            <div class="m-3 p-3 rounded border-0">@include('shared.card')</div>
+        </li>
         @endforeach
     </ul>
 </body>

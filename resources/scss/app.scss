@@ -1,1 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
+
+ul {
+    list-style-type: none;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.my-card div {
+    background-color: lightblue;
+}
