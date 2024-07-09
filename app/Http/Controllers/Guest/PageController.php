@@ -11,9 +11,17 @@ class PageController extends Controller
     public function index()
     {
         $data = [
-            'movies' => Movie::all()
+            'movies' => Movie::all()    // SELECT * FROM Movies
         ];
 
         return view('welcome', $data);
+    }
+
+    public function show($id)
+    {
+
+        $movie = Movie::find($id);
+
+        return view('movie', compact('movie'));
     }
 }
